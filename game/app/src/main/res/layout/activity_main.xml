@@ -4,33 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8F5A31"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/BTplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#504B4B"
-        android:backgroundTint="#8F5A31"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/button_c"
         android:onClick="play"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:text="@string/play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/BTrank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/button_c"
+        android:onClick="rank"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTplay" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="98dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="188dp" />
+        android:singleLine="true"
+        android:text="                  Nome"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
